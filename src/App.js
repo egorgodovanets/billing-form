@@ -69,7 +69,7 @@ function App() {
               <div className="input-wrapper">
                 <img
                   className="payment-icon"
-                  src="/Payment method icon.svg"
+                  src={`${process.env.PUBLIC_URL}/Payment method icon.svg`}
                   alt="payment"
                 />
                 <input
@@ -153,7 +153,7 @@ function App() {
                   <option value="us">United States</option>
                 </select>
                 <img
-                  src="/arrow-icon.png"
+                  src={`${process.env.PUBLIC_URL}/arrow-icon.png`}
                   className="select-icon"
                   alt="dropdown icon"
                 />
@@ -204,7 +204,7 @@ function App() {
                     <option value="texas">Texas</option>
                   </select>
                   <img
-                    src="/arrow-icon.png"
+                    src={`${process.env.PUBLIC_URL}/arrow-icon.png`}
                     className="select-icon"
                     alt="dropdown icon"
                   />
