@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/billing-form/static/css/main.762159ca.css",
+    "main.js": "/billing-form/static/js/main.25be3648.js",
+    "index.html": "/billing-form/index.html",
+    "main.762159ca.css.map": "/billing-form/static/css/main.762159ca.css.map",
+    "main.25be3648.js.map": "/billing-form/static/js/main.25be3648.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.762159ca.css",
+    "static/js/main.25be3648.js"
+  ]
+}
