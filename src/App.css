@@ -1,38 +1,204 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
+:root {
+  --neutral-900: #171717;
+  --neutral-700: #404040;
+  --neutral-500: #737373;
+  --neutral-200: #e5e5e5;
+  --neutral-50: #FAFAFA;
+}
+
+.App {
+  padding: 64px 112px;
+}
+
+.title {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--neutral-900);
+}
+
+.subtitle {
+  margin-bottom: 32px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--neutral-500);
+}
+
+.form-block {
+  display: flex;
+  gap: 32px;
+}
+
+.form-block-title {
+  color: var(--neutral-900);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+  flex: 1;
+}
+
+.inputs-block {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.inputs-row {
+  display: flex;
+  gap: 32px;
+}
+
+.input-container {
+  flex: 1;
+}
+
+.input-label {
+  margin-bottom: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--neutral-700);
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.payment-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 14px;
+}
+
+.input {
+  width: 100%;
+  height: 44px;
+  border-radius: 4px;
+  border: 1px solid var(--neutral-200);
+  padding: 10px 14px;
+  background-color: var(--neutral-50);
+}
+
+.input-card-number {
+  padding-left: 56px;
+}
+
+.input:focus {
+  border-color: #444CE7;
+  outline: none;
+  box-shadow:
+    0px 0px 0px 4px #444CE71F,
+    0px 1px 2px 0px #1018280D,
+    0px 0px 0px 1px #444CE7;
+}
+
+.input.error {
+  border-color: #D92D20;
+  box-shadow: 0px 0px 0px 4px #D92D201F,
+    0px 0px 0px 1px #D92D20;
+
+}
+
+.error-message {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #DC2626;
+}
+
+.btn {
+  margin-top: 40px;
+  padding: 10px 14px;
+  background-color: #4338CA;
+  border-radius: 4px;
+  color: white;
+  border: none;
+  cursor: pointer;
+
+  display: block;
+  margin-left: auto;
+}
+
+.btn:hover {
+  background-color: #3730A3;
+}
+
+.btn:focus {
+  box-shadow: 0px 0px 0px 4px #444CE71F;
+}
+
+.btn:disabled,
+option:disabled {
+  background-color: #F5F5F5;
+  color: #A3A3A3;
+}
+
+hr {
+  background-color: var(--neutral-200);
+  margin: 32px 0;
+}
+
+.select {
+  width: 100%;
+  height: 44px;
+  padding: 10px 40px 10px 14px;
+  border: 1px solid var(--neutral-200);
+  border-radius: 4px;
+  background-color: var(--neutral-50);
+  appearance: none;
+}
+
+.select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.select-icon {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.mt-16 {
+  margin-top: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+  .App {
+    padding: 64px 32px;
+  }
+
+  hr {
+    margin: 16px 0;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 586px) {
+  .App {
+    padding: 64px 16px;
   }
-  to {
-    transform: rotate(360deg);
+
+  hr {
+    margin: 16px 0;
+  }
+
+  .form-block {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
   }
 }
