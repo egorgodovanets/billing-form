@@ -1,0 +1,25 @@
+.btn {
+    padding: 15px 20px;
+    background-color: #4338CA;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.btn:hover {
+    background-color: #3730A3;
+}
+
+.btn:disabled {
+    background-color: #F5F5F5;
+    color: #A3A3A3;
+    cursor: auto;
+}
+
+.btn:focus {
+    box-shadow: 0px 0px 0px 4px #444CE71F;
+}

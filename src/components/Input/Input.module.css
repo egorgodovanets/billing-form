@@ -1,0 +1,48 @@
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.label {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #404040;
+    margin-bottom: 6px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px 14px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    border: 1px solid #E5E5E5;
+    background-color: #FAFAFA;
+    border-radius: 4px;
+}
+
+.input:focus {
+    border-color: #444CE7;
+    outline: none;
+    box-shadow:
+        0px 0px 0px 4px #444ce71f,
+        0px 1px 2px 0px #1018280d,
+        0px 0px 0px 1px #444ce7;
+}
+
+.inputWrapper {
+    position: relative;
+}
+
+.inputWithLeftPadding {
+    padding-left: 56px;
+}
+
+.paymentIcon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 14px;
+}

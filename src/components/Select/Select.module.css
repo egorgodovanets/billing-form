@@ -1,0 +1,34 @@
+.selectContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.selectWrapper {
+    position: relative;
+}
+
+.label {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #404040;
+    margin-bottom: 6px;
+}
+
+.select {
+    width: 100%;
+    padding: 10px 40px 10px 14px;
+    border-radius: 4px;
+    appearance: none;
+    border: 1px solid #E5E5E5;
+    background-color: #FAFAFA;
+}
+
+.selectIcon {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}

@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+}
+
+h2 {
+    flex: 1;
+}
+
+.form {
+    flex: 2;
+}
+
+.rowContainer {
+    display: flex;
+    gap: 32px;
+}
+
+.inputWrapper {
+    margin-bottom: 24px;
+}

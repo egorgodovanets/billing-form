@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+}
+
+h2 {
+    flex: 1;
+}
+
+.form {
+    flex: 2;
+}
+
+.rowContainer {
+    display: flex;
+    gap: 32px;
+}
+
+.selectWrapper {
+    margin-bottom: 24px;
+}
+
+.inputWrapper {
+    margin: 16px 0 24px;
+}
