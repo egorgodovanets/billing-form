@@ -6,17 +6,21 @@ export default function Select({
   options = [],
   defaultOption,
   disabled = false,
+  error,
+  ...rest
 }) {
   return (
     <div className={styles.selectContainer}>
       <label className={styles.label}>{label}</label>
       <div className={styles.selectWrapper}>
-        <select className={styles.select} defaultValue="" disabled={disabled}>
+        <select className={styles.select} defaultValue="" disabled={disabled} {...rest}>
           <option value="" disabled>
             {defaultOption}
           </option>
           {options.map((option) => (
-            <option key={option} value={option}>{option}</option>
+            <option key={option} value={option}>
+              {option}
+            </option>
           ))}
         </select>
         <img
@@ -25,6 +29,8 @@ export default function Select({
           alt="dropdown-icon"
         />
       </div>
+
+      {error && <p className={styles.errorMessage}>{error}</p>}
     </div>
   );
 }

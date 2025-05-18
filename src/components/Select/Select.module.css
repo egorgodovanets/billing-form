@@ -32,3 +32,11 @@
     transform: translateY(-50%);
     pointer-events: none;
 }
+
+.errorMessage {
+    padding-top: 6px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #DC2626;
+}

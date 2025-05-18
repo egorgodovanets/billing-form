@@ -43,3 +43,27 @@ hr {
   justify-content: end;
   padding-top: 40px;
 }
+
+@media only screen and (max-width: 768px) {
+  .App {
+    margin: 64px 32px;
+  }
+
+  hr {
+    margin: 16px 0;
+  }
+}
+
+@media only screen and (max-width: 586px) {
+  .App {
+    margin: 64px 16px;
+  }
+
+  hr {
+    margin: 16px 0;
+  }
+
+  .btn-container {
+    padding-top: 32px;
+  }
+}

@@ -32,6 +32,12 @@
         0px 0px 0px 1px #444ce7;
 }
 
+.input.error {
+    border-color: #D92D20;
+    box-shadow: 0px 0px 0px 4px #D92D201F,
+        0px 0px 0px 1px #D92D20;
+}
+
 .inputWrapper {
     position: relative;
 }
@@ -41,8 +47,16 @@
 }
 
 .paymentIcon {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 14px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 14px;
+}
+
+.errorMessage {
+    padding-top: 6px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #DC2626;
 }

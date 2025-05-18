@@ -9,3 +9,12 @@ h2 {
 .form {
     flex: 2;
 }
+
+@media only screen and (max-width: 586px) {
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}

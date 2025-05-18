@@ -22,3 +22,12 @@ h2 {
 .inputWrapper {
     margin: 16px 0 24px;
 }
+
+@media only screen and (max-width: 586px) {
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+}

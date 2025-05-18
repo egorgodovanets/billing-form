@@ -7,6 +7,8 @@ export default function Input({
   type = "text",
   withIcon = false,
   withoutLabel = false,
+  error,
+  ...rest
 }) {
   return (
     <div className={styles.inputContainer}>
@@ -15,9 +17,10 @@ export default function Input({
       {withIcon ? (
         <div className={styles.inputWrapper}>
           <input
-            className={`${styles.input} ${styles.inputWithLeftPadding}`}
+            className={`${styles.input} ${styles.inputWithLeftPadding} ${error ? styles.error : ""}`}
             type={type}
             placeholder={placeholder}
+            {...rest}
           />
           <img
             className={styles.paymentIcon}
@@ -26,8 +29,15 @@ export default function Input({
           />
         </div>
       ) : (
-        <input className={styles.input} type={type} placeholder={placeholder} />
+        <input
+          className={`${styles.input} ${error ? styles.error : ""}`}
+          type={type}
+          placeholder={placeholder}
+          {...rest}
+        />
       )}
+
+      {error && <p className={styles.errorMessage}>{error}</p>}
     </div>
   );
 }
